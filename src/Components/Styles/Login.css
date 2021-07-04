@@ -1,23 +1,3 @@
-.login {
-  background: -webkit-gradient(linear, left top, left bottom, from(#34B2FF), to(#7CCDFF));
-  background: linear-gradient(#34B2FF, #7CCDFF);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0px, 30px;
-  min-height: calc(100vh - 200px);
-}
-
 .login__container {
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid white;
@@ -47,6 +27,56 @@
           flex-direction: column;
 }
 
+
+.login__container--remember-me a:hover {
+  text-decoration: underline;
+}
+
+.login__container--social-media {
+  display: flex;
+  justify-content: space-around;
+}
+.socialmedia__icons{
+  width: 4vh;
+  height: 4vh;
+}
+
+.input {
+  background-color: transparent;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 2px solid white;
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 16px;
+  padding: 0px 20px;
+  outline: none;
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+.button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Yusei Magic', sans-serif;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.button:hover{
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+}
 .login__container--form label {
   font-size: 14px;
 }
@@ -68,25 +98,6 @@
   text-decoration: none;
 }
 
-.login__container--remember-me a:hover {
-  text-decoration: underline;
-}
-
-.login__container--social-media {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  align-items: flex-end;
-}
-.socialmedia__container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.socialmedia__icons{
-  width: 5vh;
-  height: 5vh;
-}
 
 .login__container--register {
   font-size: 14px;
@@ -103,19 +114,7 @@
   text-decoration: underline;
 }
 
-.input {
-  background-color: transparent;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  border-bottom: 2px solid white;
-  font-family: 'Yusei Magic', sans-serif;
-  font-size: 16px;
-  padding: 0px 20px;
-  outline: none;
-  margin-bottom: 20px;
-  height: 50px;
-}
+
 
 ::-webkit-input-placeholder {
   color: white;
@@ -133,16 +132,5 @@
   color: white;
 }
 
-.button {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  font-family: 'Yusei Magic', sans-serif;
-  height: 50px;
-  letter-spacing: 1px;
-  margin: 10px 0px;
-}
+
 
